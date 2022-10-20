@@ -3,3 +3,13 @@
 
 ## 1. Bevezetés
 #### A mai rohanó világunkban az embereknek egyszerre rengeteg kell dolorgra odafigyelniük, a legkülönbözőbb programok megfelelő beosztása sokaknak gondot jelent. Ezzel napjukra rányomja a bélyegét a folyamatos ide-oda kapkodás és a fejetlen rohanás egyik eseményből a másikba. Ennek a problémának a megoldására álltunk elő egy eseménykezelő, nyilvántartó alkalmazás készítésével, amellyel az időnk beosztása egy új szintre léphet. Ehhez nem kell mást tenni mint az alkalmazás letöltése után betáplálni a rendszerbe különböző programjainkat és ezzel egy sokkal átláthatóbb rendszert kapunk amin kedvünk és lehetőségeink szerint módosíthatunk.
+
+## 2. Projekt terv
+#### A rendszer létrehozásához rendelkezésre álló erőforrások: A felhasználó által használt notebookok/asztali számítógépek melyeknek rendelkezniük kell egy futó opercációs rendszerrel(Windows 7, Windows 10, Linux)
+- Scrum Masters: Czafik Milán
+- Product Owner: Czafik Milán , Bálint Ádám , Deme Viktor , Török Marcell , Katona Bálint
+- Contributer: Bálint Ádám
+- Contributer: Deme Viktor
+- Contributer: Török Marcell
+- Contributer: Katona Bálint
+- Megrendelő: Bagoly Gábor
