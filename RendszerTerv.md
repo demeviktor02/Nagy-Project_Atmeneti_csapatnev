@@ -13,3 +13,12 @@
 - Contributer: Török Marcell
 - Contributer: Katona Bálint
 - Megrendelő: Bagoly Gábor
+
+## 3. Résztvevők és főbb szereplők:
+- Bálint Ádám: Fő oldal, a program fejlesztése és dizájn,tesztelés.
+- Deme Viktor: A program fejlesztése és dizájn, tesztelés.
+- Török Marcell: A program fejlesztése és dizájn, tesztelés.
+- Katona Bálint: A program fejlesztése és dizájn, tesztelés.
+- Czafik Milán: A fejlesztés felülvizsgálása.
+
+
