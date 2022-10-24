@@ -29,3 +29,8 @@
 5.    Tesztelési folyamatok befejezése.
 6.   Felkészülés a projekt bemutatására.
 7.  Bemutatás.
+
+## 5. Funkcionális terv
+### A program funkcionális leírása:
+#### Futtatás után egy kezelőfelület jelenik meg, ahol egy naptár látható az atuális év, aktuális hónapjának a napjaival a kezdőfelületen. A naptáron belül tudunk lapozni, ezzel megtekintve a következő és előző hónapok napjainak az elrendezését. Az egyes napokra kattintva hozzájuk tudunk rendelni időpontokat és tevékenységeket, amiket majd az adott időpontban el akarunk végezni. Az itt megadott eseményeknek meg tudjuk adni a címét, azt, hogy időben mikor aktuálisak, illetve az eseményhez tartozó leírást tudunk készíteni. Ezeket az eseményeket utólagosan is át tudjuk írni(nevet és leírást egyaránt), át tudjuk helyezni az időpontjukat, illetve törölni is tudjuk őket. Be tudunk állítani ismétlődő eseményeket, amelyeket a naptár egy adott héten/hónapban mindig elhelyez. A naptár folyamatosan frissül, így minden egyes esemény elhelyezés után látjuk a már lefoglalt időpontjainkat.
+
