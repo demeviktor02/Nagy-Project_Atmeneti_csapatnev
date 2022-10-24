@@ -72,3 +72,14 @@
 - A szerződésekben foglaltakat vizsgálja, hogy a projekt minden része megfelel e a szerződött fél kritériumaival.
 
 ### A projekt tesztelése során főleg a fejlesztői tesztet alkalmaztuk
+
+
+## 8. Telepités
+#### A programott Githubon keresztül lehet telepíteni miután elvégeztük a letöltést ) utána ki bontjuk a mappát oda ahová szeretnénk.
+### Nemfunkcionális követelmények:
+- megbízhatóság
+- válaszidő
+- tárfoglalás
+- rugalmasság
+- robosztusság
+- hordozhatóság
