@@ -75,7 +75,8 @@
 
 
 ## 8. Telepités
-#### A programott Githubon keresztül lehet telepíteni miután elvégeztük a letöltést ) utána ki bontjuk a mappát oda ahová szeretnénk.
+#### A programott Githubon keresztül lehet telepíteni miután elvégeztük a letöltést. 
+#### Ez után kibontjuk a mappát oda ahová szeretnénk és futtatjuk az alkalmazást.
 ### Nemfunkcionális követelmények:
 - megbízhatóság
 - válaszidő
