@@ -50,7 +50,13 @@ public class CustomCalendarView extends LinearLayout{
             }
         });
 
-        
+        NextButton.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                calendar.add(Calendar.MONTH,1);
+                SetUpCalendar();
+            }
+        });
 
 
     }
@@ -69,7 +75,7 @@ public class CustomCalendarView extends LinearLayout{
     }
 
     private void SetUpCalendar(){
-
+        
     }
 
 }
