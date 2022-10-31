@@ -2,6 +2,7 @@ package com.example.calendar;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.service.autofill.DateValueSanitizer;
@@ -39,5 +40,13 @@ public class DBOpenHelper extends SQLiteOpenHelper {
         contentValues.put(DBStructure.MONTH,month);
         contentValues.put(DBStructure.YEAR,year);
         database.insert(DBStructure.EVENT_TABLE_NAME,null,contentValues);
+    }
+
+    public Cursor ReadEvents(String date,SQLiteDatabase database){
+        String [] Projections = {DBStructure.EVENT,DBStructure.TIME,DBStructure.DATE,DBStructure.MONTH,DBStructure.YEAR};
+        String Selection = DBStructure.DATE +"=?";
+        String [] SelectionArgs = {date};
+
+        return database.query(DBStructure.EVENT_TABLE_NAME,Projections,Selection,SelectionArgs,null,null,null);
     }
 }
