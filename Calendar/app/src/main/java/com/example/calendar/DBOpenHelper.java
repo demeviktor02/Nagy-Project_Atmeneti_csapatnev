@@ -1,8 +1,10 @@
 package com.example.calendar;
 
+import android.content.ContentValues;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.service.autofill.DateValueSanitizer;
 
 import androidx.annotation.Nullable;
 
@@ -19,12 +21,23 @@ public class DBOpenHelper extends SQLiteOpenHelper {
     }
 
     @Override
-    public void onCreate(SQLiteDatabase sqLiteDatabase) {
-
+    public void onCreate(SQLiteDatabase db){
+        db.execSQL(CREATE_EVENTS_TABLE);
     }
 
     @Override
-    public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
+    public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
+        db.execSQL(DROP_EVENTS_TABLE);
+        onCreate(db);
+    }
 
+    public void SaveEvent(String event, String time, String date, String month, String year, SQLiteDatabase database){
+        ContentValues contentValues = new ContentValues();
+        contentValues.put(DBStructure.EVENT,event);
+        contentValues.put(DBStructure.TIME,time);
+        contentValues.put(DBStructure.DATE,date);
+        contentValues.put(DBStructure.MONTH,month);
+        contentValues.put(DBStructure.YEAR,year);
+        database.insert(DBStructure.EVENT_TABLE_NAME,null,contentValues);
     }
 }
