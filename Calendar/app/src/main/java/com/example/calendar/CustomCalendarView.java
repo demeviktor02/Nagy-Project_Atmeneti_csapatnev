@@ -3,6 +3,8 @@ package com.example.calendar;
 import android.content.Context;
 import android.provider.CalendarContract;
 import android.util.AttributeSet;
+import android.view.LayoutInflater;
+import android.view.View;
 import android.widget.GridView;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
@@ -40,9 +42,17 @@ public class CustomCalendarView extends LinearLayout{
         this.context = context;
 
 
+
     }
 
-
+    private void IntializeLayout(){
+        LayoutInflater inflater = (LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        View view = inflater.inflate(R.layout.calendar_layout, this);
+        NextButton = view.findViewById(R.id.nextBtn);
+        PreviousButton = view.findViewById(R.id.previousBtn);
+        CurrentDate = view.findViewById(R.id.current_Date);
+        gridView = view.findViewById(R.id.gridview);
+    }
 
 
 }
