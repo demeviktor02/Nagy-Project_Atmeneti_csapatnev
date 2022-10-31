@@ -45,7 +45,7 @@
 - Windows 8.1
 - Windows 10
 ### Szoftver moduljai:
-- 
+- A szoftver egy naptár nézeten alapuló android studio alkalmazás
 ### Fejlesztői környezet:
 - Android Studio
 
