@@ -40,9 +40,23 @@ public class CustomCalendarView extends LinearLayout{
     public CustomCalendarView(Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
         this.context = context;
+        IntializeLayout();
+
+        PreviousButton.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                calendar.add(Calendar.MONTH,-1);
+                SetUpCalendar();
+            }
+        });
+
+        
 
 
+    }
 
+    public CustomCalendarView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
+        super(context, attrs, defStyleAttr);
     }
 
     private void IntializeLayout(){
@@ -54,5 +68,8 @@ public class CustomCalendarView extends LinearLayout{
         gridView = view.findViewById(R.id.gridview);
     }
 
+    private void SetUpCalendar(){
+
+    }
 
 }
