@@ -41,6 +41,7 @@ public class CustomCalendarView extends LinearLayout{
         super(context, attrs);
         this.context = context;
         IntializeLayout();
+        SetUpCalendar();
 
         PreviousButton.setOnClickListener(new OnClickListener() {
             @Override
@@ -75,7 +76,8 @@ public class CustomCalendarView extends LinearLayout{
     }
 
     private void SetUpCalendar(){
-        
+        String currentDate = dateFormat.format(calendar.getTime());
+        CurrentDate.setText(currentDate);
     }
 
 }
