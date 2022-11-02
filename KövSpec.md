@@ -9,3 +9,6 @@
 
 ## 4. Igényelt üzleti folyamatok modellje
 #### Fejlesztő csapat összeállítása -> Feladatok értelmezése -> Projekt feloszlatása különböző pontokra -> Különböző feladatok szétosztása a projektben résztvevők között -> Folyamatos kommunikáció a fejlesztés során -> Végleges teszt után alkalmazás közzététele -> Értékelések és hozzászólások nyomon követése -> Folyamatos fejlesztés.
+
+## 5. Vágyálomrendszer
+#### Egy olyan alkalmazás elkészítése a célunk, amely minden felhasználó számára könnyen kezelhető. Olyan naptáras alkalmazás, amely színvilága felkelti a figyelmet és funkciói megkönnyítik az azt igénybe vevők dolgát. Bármely naphoz tudjanak kedvükre hozzáadni valamilyen eseményt vagy esetleg törölni meglévőket. A könnyebb követhetőség érdekében az esemény közelgésekor az alkalmazás egy értesítést küld a felhasználónak. Így biztosítva, hogy a felhasználónak ne kelljen folyamatosan nyomon követnie saját eseményeit, és emellett biztosan nem fog megfeledkezni semmiről sem. Pár gombnyomás és a felhasználó jövőbeli programjai eltervezésre kerülnek és minden további nélkül élhetik a mindennapjaikat annak nyugalmában, hogy nem feledkeznek meg semmiről.
