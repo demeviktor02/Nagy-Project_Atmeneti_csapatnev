@@ -4,5 +4,8 @@
 ## 2. Jelenlegi helyzet leírása
 #### Manapság már az okostelefonok mindenki számára "létszükségesek". Szinte mindenki rendelkezik egyel. Mind olyan alkalmazásokat keresnek, melyek legjobban megfelelnek nekik. Mivel rengeteg alkalmazás közül lehet választani, így elsőként az értékelések alapján fognak válogatni ugyanolyan funkciót ellátó alkalmazások között. Célunk az, hogy a legtöbb egyszínű, sima naptáros alkalmazások használata helyett készítsünk egy színes, a felhasználó által testreszabható naptárat. Ehhez a naptárhoz kedve szerint adhat bármilyen eseményt, vagy akár törölhet is egy esetleges változás miatt. Az esemény közelgésekor értesítést is kap a felhasználó, hogy még véletlen se felejtkezzen el egy fontos eseményről.
 
-## 3.Jelenlegi üzleti folyamatok modellje
+## 3. Jelenlegi üzleti folyamatok modellje
 #### Nagy számú felhasználó -> Óriási mennyiségű igény okostelefonos appok iránt -> Különféle alkalmazások keletkezése -> Konkurencia -> Piaci versengés ->A többi app kőzül kiemelkedő alkalmazás elkészítése.
+
+## 4. Igényelt üzleti folyamatok modellje
+#### Fejlesztő csapat összeállítása -> Feladatok értelmezése -> Projekt feloszlatása különböző pontokra -> Különböző feladatok szétosztása a projektben résztvevők között -> Folyamatos kommunikáció a fejlesztés során -> Végleges teszt után alkalmazás közzététele -> Értékelések és hozzászólások nyomon követése -> Folyamatos fejlesztés.
