@@ -1,11 +1,11 @@
 ## 1. A rendszer céljai és nem céljai
- - Események fel vétele és törlése 
+ - Események felvétele és törlése 
  - Könnyű kezelhetőség
  - Könnyű átláthatóság
 
 ## 2. Vágyálom rendszer
-- A program betöltésekor egy Naptárat lásson a felhasználó 
-- A "ahogy végül meg valósitjuk" gombra kattitva tudjon Esemént fel venni
+- A program betöltésekor egy naptárat lásson a felhasználó 
+- Az "ahogy végül meg valósitjuk" gombra kattitva tudjon esemént fel venni
 - Az eseményre kattintva tudjuk törölni 
 - Az eseményre kattintva tudjuk módosítani
 
