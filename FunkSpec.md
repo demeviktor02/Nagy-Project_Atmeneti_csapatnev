@@ -19,3 +19,6 @@ A rendszer legfőbb célja, hogy a felhasználók, cégek és magánszemélyek e
 
 ## 6. Használati esetek
 Bárki: az alkamazást mindenkinek fejlesztjük aki akar egy jól müködő kompakt Naptár applikációt.
+
+## 7. Terjedelem
+Körülbelül 3000 soros kód.
