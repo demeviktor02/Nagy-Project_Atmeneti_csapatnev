@@ -96,9 +96,13 @@ public class CustomCalendarView extends LinearLayout{
 
 
             });
+            final String date=dateFormat.format(dates.get(position));
+            final String month=monthFormat.format(dates.get(position));
+            final String year=yearFormat.format(dates.get(position));
+
             AddEvent.setOnClickListener(new onClickListener(){
                 public void onClick(View v){
-
+                    SaveEvent(EventName.getText().toString(),EventTime.getText().toString(),date,month,year);
                 }
             });
 
