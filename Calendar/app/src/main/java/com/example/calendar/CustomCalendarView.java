@@ -158,4 +158,24 @@ public class CustomCalendarView extends LinearLayout{
         gridView.setAdapter(myGridAdapter);
     }
 
+    private void CollectEventsPerMonth(String Month,String year)
+    {
+        eventsList.clear();
+        dbOpenHelper=new dbOpenHelper(context);
+        SQLiteDatabase database=dbOpenHelper.getReadableDatabase();
+        Cursor cursor=dbOpenHelper.ReadEventsperMonth(Month,year,database);
+        while(cursor.moveToNext()){
+            String event=cursor.getString(cursor.getColumnIndex(DBStructure.EVENT));
+            String time=cursor.getString(cursor.getColumnIndex(DBStructure.TIME));
+            String date=cursor.getString(cursor.getColumnIndex(DBStructure.DATE));
+            String month=cursor.getString(cursor.getColumnIndex(DBStructure.MONTH));
+            String Year=cursor.getString(cursor.getColumnIndex(DBStructure.YEAR));
+
+            Events events=new Events(event,time,date,month,Year);
+            eventsList.add(events);
+        }
+        cursor.close();
+        dbOpenHelper.close();
+    }
+
 }
