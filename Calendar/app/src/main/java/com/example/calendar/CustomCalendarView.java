@@ -78,6 +78,17 @@ public class CustomCalendarView extends LinearLayout{
     private void SetUpCalendar(){
         String currentDate = dateFormat.format(calendar.getTime());
         CurrentDate.setText(currentDate);
+        dates.clear();
+        Calendar monthCalendar = (Calendar) calendar.clone();
+        monthCalendar.set(Calendar.DAY_OF_MONTH,1);
+        int FirstDayofMonth=monthCalendar.get(Calendar.DAY_OF_WEEK)-1;
+        monthCalendar.add(Calendar.DAY_OF_MONTH,-FirstDayofMonth);
+
+        while(dates.size()<MAX_CALENDAR_DAYS)
+        {
+            dates.add(monthCalendar.getTime());
+            monthCalendar.add(Calendar.DAY_OF_MONTH, amount 1);
+        }
     }
 
 }
