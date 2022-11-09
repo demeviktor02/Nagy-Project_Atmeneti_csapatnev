@@ -26,6 +26,7 @@ public class MyGridAdapter extends ArrayAdapter
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent){
         Date monthDate=dates.get(position);
         Calendar dateCalendar=Calendar.getInstance();
+        dateCalendar.setTime(monthDate);
         int DayNo=dateCalendar.get(Calendar.DAY_OF_MONTH);
         int displayMonth=dateCalendar.get(Calendar.MONTH)+1;
         int displayYear=dateCalendar.get(Calendar.YEAR);
@@ -41,6 +42,12 @@ public class MyGridAdapter extends ArrayAdapter
         if(displayMonth==currentMonth && displayYear==currentYear){
             view.setBackGroundColor(getContext().getResources().getColor(R.color.green));
         }
+        else{
+            view.setBackgroundColor(Color.parseColor(colorString: "#cccccc"));
+        }
+
+        TextView Day_Number=convertView.findViewById(R.id.calendar_day);
+        Day_Number.setText(String.valueOf(DayNo));
 
         return convertView;
     }
