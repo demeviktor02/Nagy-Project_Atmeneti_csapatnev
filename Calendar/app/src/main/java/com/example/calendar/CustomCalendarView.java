@@ -113,6 +113,14 @@ public class CustomCalendarView extends LinearLayout{
         super(context, attrs, defStyleAttr);
     }
 
+    private void SaveEvent(String event,String time,String date,String month,String year){
+        dbOpenHelper=new dbOpenHelper=(context);
+        SQLiteDatabase database = dbOpenHelper.getWritableDatabase();
+        dbOpenHelper.SaveEvent(event,time,date,month,year,database);
+        dbOpenHelper.close();
+        Toast.makeText(context, text:"Event Saved",Toast.LENGTH_SHORT).show();
+    }
+
     private void IntializeLayout(){
         LayoutInflater inflater = (LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View view = inflater.inflate(R.layout.calendar_layout, this);
