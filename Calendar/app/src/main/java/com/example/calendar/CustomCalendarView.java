@@ -117,7 +117,31 @@ public class CustomCalendarView extends LinearLayout{
         });
 
 
+
+
+
     }
+
+    private ArrayList<Events> CollectEventByDate(String date){
+        ArrayList<Events> arrayList=new ArrayList<>();
+        dbOpenHelper =new DBOpenHelper(context);
+        SQLiteDatabase database=dbOpenHelper.getReadableDatabase();
+        Cursor cursor=dbOpenHelper.ReadEvents(date,database);
+        while(cursor.MoveToNext()){
+            String event=cursor.getString(cursor.getColumnIndex(DBStructure.EVENT));
+            String time=cursor.getString(cursor.getColumnIndex(DBStructure.TIME));
+            String Date=cursor.getString(cursor.getColumnIndex(DBStructure.DATE));
+            String month=cursor.getString(cursor.getColumnIndex(DBStructure.MONTH));
+            String Year=cursor.getString(cursor.getColumnIndex(DBStructure.YEAR));
+            Events events=new Events(event,time,Date,month,Year);
+            arrayList.add(events);
+        }
+        cursor.close();
+        dbOpenHelper.close();
+
+        return arrayList;
+    }
+
 
     public CustomCalendarView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
@@ -159,6 +183,9 @@ public class CustomCalendarView extends LinearLayout{
         myGridAdapter = new myGridAdapter(context,dates,calendar,eventsList);
         gridView.setAdapter(myGridAdapter);
     }
+
+
+
 
     private void CollectEventsPerMonth(String Month,String year)
     {
