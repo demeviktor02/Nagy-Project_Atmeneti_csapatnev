@@ -58,6 +58,18 @@ public class MyGridAdapter extends ArrayAdapter
         return view;
     }
 
+    private Date ConvertStringToDate(String eventDate){
+        SimpleDateFormat format=new SimpleDateFormat(pattern: "yyyy-MM-ddd",locale.ENGLISH);
+        Date date=null;
+        try{
+            date=format.parse(eventDate);
+        }
+        catch (ParseException e){
+            e.printStackTrace;
+        }
+        return date;
+    }
+
     @Override
     public int getCount(){
         return dates.size();
