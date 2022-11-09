@@ -24,6 +24,24 @@ public class MyGridAdapter extends ArrayAdapter
     @NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent){
+        Date monthDate=dates.get(position);
+        Calendar dateCalendar=Calendar.getInstance();
+        int DayNo=dateCalendar.get(Calendar.DAY_OF_MONTH);
+        int displayMonth=dateCalendar.get(Calendar.MONTH)+1;
+        int displayYear=dateCalendar.get(Calendar.YEAR);
+        int currentMonth=currentDate.get(Calendar.Month)+1;
+        int currentYear=currentDate.get(Calendar.Month);
+
+        View view=convertView;
+        if(view==null)
+        {
+            view=inflater.inflate(R.layout.single_cell_layout,root null);
+        }
+
+        if(displayMonth==currentMonth && displayYear==currentYear){
+            view.setBackGroundColor(getContext().getResources().getColor(R.color.green));
+        }
+
         return convertView;
     }
 

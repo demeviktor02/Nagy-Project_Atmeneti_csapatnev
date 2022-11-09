@@ -62,7 +62,7 @@ public class CustomCalendarView extends LinearLayout{
 
         gridView.SetOnItemClickListener(new AdapterView.onItemClickListener()
         {
-            @override
+            @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id)
             {
                 AlertDialog.Builder builder=new AlertDialog.Builder(context);
@@ -73,14 +73,14 @@ public class CustomCalendarView extends LinearLayout{
                 ImageButton SetTime=addView.findViewById(R.id.seteventtime);
                 Button AddEvent=addView.findViewById(R.id.addevent);
                 SetTime.setOnClickListener(new onClickListener() {
-                    @override
+                    @Override
                     public void onClick(View v) {
                     Calendar calendar = calendar.getInstance();
                     int hours = calendar.get(Calendar.HOUR_OF_DAY);
                     int minutes = calendar.get(Calendar.MINUTE);
                     TimePickerDialog timePickerDialog = new TimePickerDialog(addView.getContext(), R.style.Theme_AppCompat_Dialog
                             , new TimePickerDialog.OnTimeSetListener()) {
-                            @override
+                            @Override
                             public void onTimeSet(Timepicker view,int hourOfDay,int minute){
                             Calendar c=Calendar.getInstance();
                             c.set(Calendar.HOUR_OF_DAY,hourOfDay);
