@@ -30,6 +30,7 @@ public class CustomCalendarView extends LinearLayout{
     SimpleDateFormat monthFormat = new SimpleDateFormat("MMMM", Locale.ENGLISH);
     SimpleDateFormat yearFormat = new SimpleDateFormat("yyyy", Locale.ENGLISH);
 
+    MyGridAdapter myGridAdapter;
     AlertDialog alertDialog;
     List<Date> dates = new ArrayList<>();
     List<Events> eventsList = new ArrayList<>();
@@ -152,6 +153,9 @@ public class CustomCalendarView extends LinearLayout{
             dates.add(monthCalendar.getTime());
             monthCalendar.add(Calendar.DAY_OF_MONTH, amount 1);
         }
+
+        myGridAdapter = new myGridAdapter(context,dates,calendar,eventsList);
+        gridView.setAdapter(myGridAdapter);
     }
 
 }

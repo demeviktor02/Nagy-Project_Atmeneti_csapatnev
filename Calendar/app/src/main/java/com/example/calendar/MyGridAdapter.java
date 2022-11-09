@@ -34,9 +34,10 @@ public class MyGridAdapter extends ArrayAdapter
         int currentYear=currentDate.get(Calendar.Month);
 
         View view=convertView;
+
         if(view==null)
         {
-            view=inflater.inflate(R.layout.single_cell_layout,root null);
+            view=inflater.inflate(R.layout.single_cell_layout,parent,attachToRoot false);
         }
 
         if(displayMonth==currentMonth && displayYear==currentYear){
@@ -46,10 +47,15 @@ public class MyGridAdapter extends ArrayAdapter
             view.setBackgroundColor(Color.parseColor(colorString: "#cccccc"));
         }
 
-        TextView Day_Number=convertView.findViewById(R.id.calendar_day);
+        TextView Day_Number=view.findViewById(R.id.calendar_day);
         Day_Number.setText(String.valueOf(DayNo));
+        Calendar eventCalendar=Calendar.getInstance();
+        ArrayList<String> arrayList=new ArrayList<>();
+        for (int i=0;i<events.size();i++){
 
-        return convertView;
+        }
+
+        return view;
     }
 
     @Override
