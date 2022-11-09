@@ -60,6 +60,23 @@ public class CustomCalendarView extends LinearLayout{
             }
         });
 
+        gridView.SetOnItemClickListener(new AdapterView.onItemClickListener())
+        {
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id)
+            {
+                AlertDialog.Builder builder=new AlertDialog.Builder(context);
+                builder.SetCancellable=(true);
+                final View addView=LayoutInflater.from(parent.getContext()).inflate (R.layout.add_newevent_layout, root null);
+                EditText EventName=addView.findViewById(R.id.events_id);
+                TextView EventTime=addView.findViewById(R.id.eventtime);
+                ImageButton SetTime=addView.findViewById(R.id.seteventtime);
+                Button AddEvent=addView.findViewById(R.id.addevent);
+                SetTime.setOnClickListener(new onClickListener) {
+
+            }
+            }
+        }
+
 
     }
 
