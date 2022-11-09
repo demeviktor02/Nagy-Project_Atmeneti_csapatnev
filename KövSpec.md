@@ -14,3 +14,13 @@
 #### Egy olyan alkalmazás elkészítése a célunk, amely minden felhasználó számára könnyen kezelhető. Olyan naptáras alkalmazás, amely színvilága felkelti a figyelmet és funkciói megkönnyítik az azt igénybe vevők dolgát. Bármely naphoz tudjanak kedvükre hozzáadni valamilyen eseményt vagy esetleg törölni meglévőket. A könnyebb követhetőség érdekében az esemény közelgésekor az alkalmazás egy értesítést küld a felhasználónak. Így biztosítva, hogy a felhasználónak ne kelljen folyamatosan nyomon követnie saját eseményeit, és emellett biztosan nem fog megfeledkezni semmiről sem. Pár gombnyomás és a felhasználó jövőbeli programjai eltervezésre kerülnek és minden további nélkül élhetik a mindennapjaikat annak nyugalmában, hogy nem feledkeznek meg semmiről.
 
 ## 6. Követelménylista
+|ID |   Modul    |        Név         |    Leírás                                                                     |
+|---|------------|:-----------------: |------------------------------------------------------------------------------:|										     
+|1  |  Főoldal   |  Naptár   | Naptár megjelenítése a főoldalon.             |
+|2  |  Főoldal   |  Kinézet           | Egyszerű és figyelemfelkeltő kinézet a könnyű eligazodás érdekében.|
+|3  |  Főoldal   |  Kinézet           | Kinézet megtervezése, deklarálása, képernyőtervek elkészítése.                 |
+|4  |  Főoldal   |  Kinézet           | Kinézet implementálása képernyőtervek alapján .                                |
+|5  |  Funkció  |  Esemény létrehozás           | Létrehoz egy eseményt a kiválasztott dátumhoz.                     |
+|6  |  Funkció  |  Esemény törlés            | A kiválasztott dátum létrehozott eseményének törlése.                         |
+|7  |  Funkció  |  Esemény módosítása            | A kiválasztott dátum létrehozott eseményének módosítása.          |
+|8  |  Esemény  |  Kinézet            | Dizájn elkészítése képernyőtervek alapján.                                    |
