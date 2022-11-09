@@ -60,7 +60,7 @@ public class CustomCalendarView extends LinearLayout{
             }
         });
 
-        gridView.SetOnItemClickListener(new AdapterView.onItemClickListener())
+        gridView.SetOnItemClickListener(new AdapterView.onItemClickListener()
         {
             @override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id)
@@ -72,23 +72,39 @@ public class CustomCalendarView extends LinearLayout{
                 TextView EventTime=addView.findViewById(R.id.eventtime);
                 ImageButton SetTime=addView.findViewById(R.id.seteventtime);
                 Button AddEvent=addView.findViewById(R.id.addevent);
-                SetTime.setOnClickListener(new onClickListener) {
+                SetTime.setOnClickListener(new onClickListener() {
                     @override
-                    public void onClick(View v){
+                    public void onClick(View v) {
                     Calendar calendar = calendar.getInstance();
                     int hours = calendar.get(Calendar.HOUR_OF_DAY);
                     int minutes = calendar.get(Calendar.MINUTE);
                     TimePickerDialog timePickerDialog = new TimePickerDialog(addView.getContext(), R.style.Theme_AppCompat_Dialog
                             , new TimePickerDialog.OnTimeSetListener()) {
-
+                            @override
+                            public void onTimeSet(Timepicker view,int hourOfDay,int minute){
+                            Calendar c=Calendar.getInstance();
+                            c.set(Calendar.HOUR_OF_DAY,hourOfDay);
+                            c.set(Calendar.MINUTE,minute);
+                            c.setTimeZone(TimeZone.getDefault());
+                            SimpleDateFormat hformate= new SimpleDateFormat(pattern: "K:mm a",Locale.ENGLISH);
+                            String event_Time=hformate.format(c.getTime());
+                            EventTime.setText(event_Time);
                     }
-                }
+                },hours,minutes,is24HourView false);
+                    timePickerDialog.show();
                 }
 
 
+            });
+            AddEvent.setOnClickListener(new onClickListener(){
+                public void onClick(View v){
+
+                }
+            });
+
+
             }
-            }
-        }
+        });
 
 
     }
