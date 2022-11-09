@@ -117,7 +117,30 @@ public class CustomCalendarView extends LinearLayout{
         });
 
 
+        gridView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener(){
+            @Override
+            public boolean onItemLongClick(AdapterView<?> parent,View view,int position,long id){
+                String date=eventDateFormat.format(dates.get(position));
 
+                AlertDialog.Builder builder=new AlerDialog.Builder(context);
+                builder.setCancelable(true);
+                View showView=LayoutInflater.from(parent.getContext()).inflate(R.layout.show_events_layout, root null)
+                RecyclerView recyclerView=showView.findViewById(R.id.EventsRV);
+                RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(showView.getContext());
+                recyclerView.setLayoutManager(layoutManager);
+                recyclerView.setHasFixedSize(true);
+                EventRecyclerAdapter eventRecyclerAdapter=new EventRecyclerAdapter(showView.getContext()
+                ,CollectEventByDate(date));
+                recyclerView.setAdapter(eventRecyclerAdapter);
+                eventRecyclerAdapter.notifyDataSetChanged();
+
+                builder.setView(showView);
+                alertDialog = builder.create();
+                alertDialog.show();
+
+                return  true;
+            }
+        });
 
 
     }
