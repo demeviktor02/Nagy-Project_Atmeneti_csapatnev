@@ -29,6 +29,7 @@ public class CustomCalendarView extends LinearLayout{
     SimpleDateFormat dateFormat = new SimpleDateFormat( "MMMM yyyy", Locale.ENGLISH);
     SimpleDateFormat monthFormat = new SimpleDateFormat("MMMM", Locale.ENGLISH);
     SimpleDateFormat yearFormat = new SimpleDateFormat("yyyy", Locale.ENGLISH);
+    SimpleDateFormat eventDateFormat = new SimpleDateFormat(pattern: "yyyy-MM-dd",Locale.ENGLISH);
 
     MyGridAdapter myGridAdapter;
     AlertDialog alertDialog;
@@ -69,8 +70,8 @@ public class CustomCalendarView extends LinearLayout{
                 AlertDialog.Builder builder=new AlertDialog.Builder(context);
                 builder.SetCancellable=(true);
                 final View addView=LayoutInflater.from(parent.getContext()).inflate (R.layout.add_newevent_layout, root null);
-                EditText EventName=addView.findViewById(R.id.events_id);
-                TextView EventTime=addView.findViewById(R.id.eventtime);
+                final EditText EventName=addView.findViewById(R.id.eventname);
+                final TextView EventTime=addView.findViewById(R.id.eventtime);
                 ImageButton SetTime=addView.findViewById(R.id.seteventtime);
                 Button AddEvent=addView.findViewById(R.id.addevent);
                 SetTime.setOnClickListener(new onClickListener() {
@@ -97,7 +98,7 @@ public class CustomCalendarView extends LinearLayout{
 
 
             });
-            final String date=dateFormat.format(dates.get(position));
+            final String date=eventDateFormat.format(dates.get(position));
             final String month=monthFormat.format(dates.get(position));
             final String year=yearFormat.format(dates.get(position));
 
