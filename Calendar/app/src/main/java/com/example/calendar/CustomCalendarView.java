@@ -103,9 +103,13 @@ public class CustomCalendarView extends LinearLayout{
             AddEvent.setOnClickListener(new onClickListener(){
                 public void onClick(View v){
                     SaveEvent(EventName.getText().toString(),EventTime.getText().toString(),date,month,year);
+                    SetUpCalendar();
+                    alertDialog.dismiss();
                 }
             });
-
+                builder.setView(addView);
+                alertDialog=builder.create();
+                alertDialog.show();
 
             }
         });
