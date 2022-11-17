@@ -38,7 +38,7 @@
 ### Futtatás módja:
 - Minden számítógépen lokálisan fut majd
 ### Futtató környezet:
-- Android
+- Android 5.0 (Lollipop)
 ### Elérhető operációs rendszerek:
 - Windows 7
 - Windows 8
