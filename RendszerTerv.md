@@ -48,6 +48,7 @@
 - A szoftver egy naptár nézeten alapuló android studio alkalmazás
 ### Fejlesztői környezet:
 - Android Studio
+- Java 17
 
 ## 7. Teszt terv
 ### Leírja a teszt típusát, a metodológiáját és a riport készítés módszerét. Emellett meghatározza a teszt elvárásokat, a teszt-esetek elvárt eredményeit, sikerességének kritériumait, a kockázatok kezelését és a hatáskörön kívül eseteket.
