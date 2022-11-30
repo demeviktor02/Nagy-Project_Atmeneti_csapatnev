@@ -3,6 +3,7 @@ package com.example.calendar;
 import androidx.annotation.NonNull;
 
 import android.content.Context;
+import android.database.sqlite.SQLiteDatabase;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,6 +17,7 @@ public class EventRecyclerAdapter extends RecyclerView.Adapter<EventRecyclerAdap
 
     Context context;
     ArrayList<Events> arrayList;
+    DBOpenHelper dbOpenHelper;
 
     public EventRecyclerAdapter(Context context,ArrayList<Events> arrayList){
         this.context=context;
@@ -31,11 +33,19 @@ public class EventRecyclerAdapter extends RecyclerView.Adapter<EventRecyclerAdap
     }
 
     @Override
-    public void onBindViewHolder(@NonNull MyViewHolder holder,int position){
-        Events events=arrayList.get(position);
+    public void onBindViewHolder(@NonNull MyViewHolder holder, int position){
+        Events events=arrayList.get(holder.getAdapterPosition());
         holder.Event.setText(events.getEVENT());
         holder.DateTxt.setText(events.getDATE());
         holder.Time.setText(events.getTIME());
+        holder.delete.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                deleteCalendarEvent(events.getEVENT(),events.getDATE(), events.getTIME());
+                arrayList.remove(holder.getAdapterPosition());
+                notifyDataSetChanged();
+            }
+        });
     }
 
     @Override
@@ -55,6 +65,14 @@ public class EventRecyclerAdapter extends RecyclerView.Adapter<EventRecyclerAdap
             DateTxt=itemView.findViewById(R.id.eventdate);
             Event=itemView.findViewById(R.id.eventname);
             Time=itemView.findViewById(R.id.eventime);
+            delete = itemView.findViewById(R.id.delete);
         }
+    }
+
+    private void deleteCalendarEvent(String event, String date, String time){
+        dbOpenHelper = new DBOpenHelper(context);
+        SQLiteDatabase database = dbOpenHelper.getWritableDatabase();
+        dbOpenHelper.deleteEvent(event,date,time,database);
+        dbOpenHelper.close();
     }
 }
