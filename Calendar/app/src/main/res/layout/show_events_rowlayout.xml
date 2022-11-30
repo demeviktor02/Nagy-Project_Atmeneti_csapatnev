@@ -45,6 +45,12 @@
                 android:text="Time"
                 android:textSize="20dp"/>
 
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/delete"
+                android:textAllCaps="false"
+                android:layout_margin="10dp"/>
 
         </LinearLayout>
         </androidx.cardview.widget.CardView>
