@@ -18,3 +18,17 @@ Ebben a dokumentumban lesz felsorolva az elvégzett tesztek elvárásai és ered
 
 Az Alfa tesztelés során a vizsgált elemek mind hibátlanul működtek mindenféle fennakadások nélkül.
 Az Alfa tesztelés során a vizsgált elemek között volt ami nem megfelelően működött, ez a későbbiek során javításra szorul.
+
+Következő tesztelésnél a többi funkció kerül vizsgálatra illetve elemzésre.
+## Béta teszt
+
+| Vizsgálat | Tesztelés időpontja | Elvárás | Eredmény | Hibák |
+| :---: | --- | --- | --- | --- |
+| Tetszőleges dátumra való kattintás | 2022.12.01. | Megjelenik az esemény hozzáadása ablak | Megjelenik az esemény hozzáadása ablak | Nem találtam hibát a működésében |
+| Írás az esemény hozzáadása ablak textboxba | 2022.12.01. | Egy tetszőleges szöveg beírható amit az esemény címének szánunk | Egy tetszőleges szöveg beírható amit az esemény címének szánunk | Nem találtam hibát a működésében |
+| Az időt mutató textre kettintás az esemény hozzáadása ablakban | 2022.12.01. | Egy óra nézet jön elő ahol megadhatjuk az aktuális esemény pontos idejét | Egy óra nézet jön elő ahol megadhatjuk az aktuális esemény pontos idejét | Nem találtam hibát a működésében |
+| Event véglegesítése az add event gomb megnyomásával | 2022.12.01. | A rendszer rögzíti az eventet az adatbázikba a megadott adatokkal | A rögzített időpont hibásan jelenik meg az adatbázisban | Az időpont mentése hibás, javításra szorul |
+| Tetszőleges dátumra való kattintás, ahol már létezik meglévő esemény | 2022.12.01. | Megjelenik az az adott esemény pontos neve és ideje |  Megjelenik az az adott esemény pontos neve, viszont az idő hibásan jelenik meg | Az idő megjelenítése hibás javításra szorul |
+
+A Béta teszt sikeresen zajlott.
+A Béta teszt során akadtan hibák, mely(ek) javításra szorulnak.
