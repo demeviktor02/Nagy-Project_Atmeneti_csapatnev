@@ -45,6 +45,15 @@
                 android:text="Time"
                 android:textSize="20dp"/>
 
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_action_notification_off"
+                android:background="@color/design_default_color_primary_dark"/>
+
+
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
