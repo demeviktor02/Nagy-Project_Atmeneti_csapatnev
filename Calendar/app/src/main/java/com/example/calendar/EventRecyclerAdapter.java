@@ -8,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -58,7 +59,7 @@ public class EventRecyclerAdapter extends RecyclerView.Adapter<EventRecyclerAdap
 
         Button delete;
 
-
+        ImageButton setAlarm;
 
         public MyViewHolder(@NonNull View itemView){
             super(itemView);
@@ -66,6 +67,7 @@ public class EventRecyclerAdapter extends RecyclerView.Adapter<EventRecyclerAdap
             Event=itemView.findViewById(R.id.eventname);
             Time=itemView.findViewById(R.id.eventime);
             delete = itemView.findViewById(R.id.delete);
+            setAlarm = itemView.findViewById(R.id.alarmmeBtn);
         }
     }
 
