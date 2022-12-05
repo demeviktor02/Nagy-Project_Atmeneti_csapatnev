@@ -97,8 +97,6 @@ public class CustomCalendarView extends LinearLayout{
                 alarmYear = dateCalendar.get(Calendar.YEAR);
                 alarmMonth = dateCalendar.get(Calendar.MONTH);
                 alarmDay = dateCalendar.get(Calendar.DAY_OF_MONTH);
-                alarmYear = dateCalendar.get(Calendar.YEAR);
-                alarmYear = dateCalendar.get(Calendar.YEAR);
                 Button AddEvent=addView.findViewById(R.id.addevent);
                 SetTime.setOnClickListener(new OnClickListener() {
                     @Override
@@ -136,6 +134,9 @@ public class CustomCalendarView extends LinearLayout{
                     if (alarmMe.isChecked()){
                         SaveEvent(EventName.getText().toString(),EventTime.getText().toString(),date,month,year,"on");
                         SetUpCalendar();
+                        Calendar calendar = Calendar.getInstance();
+                        calendar.set(alarmYear,alarmMonth,alarmDay,alarmHour,alarmMinute ;
+                        setAlarm(calendar,EventName.getText().toString(),EventTime.getText().toString(),getRequestCode(date,EventName.getText().toString(),EventTime.getText().toString()));
                         alertDialog.dismiss();
                     }else {
                         SaveEvent(EventName.getText().toString(), EventTime.getText().toString(), date, month, year,"off");
@@ -183,6 +184,19 @@ public class CustomCalendarView extends LinearLayout{
         });
 
 
+    }
+
+    private int getRequestCode(String date,String  event,String time){
+        int code = 0;
+        DBOpenHelper dbOpenHelper =new DBOpenHelper(context);
+        SQLiteDatabase database=dbOpenHelper.getReadableDatabase();
+        Cursor cursor=dbOpenHelper.ReadEvents(date,database);
+        while(cursor.moveToNext()){
+            code=cursor.getInt(cursor.getColumnIndex(DBStructure.ID));
+        }
+        cursor.close();
+        dbOpenHelper.close();
+        return code;
     }
 
     private void setAlarm(Calendar calendar,String event,String time,int RequestCode){
