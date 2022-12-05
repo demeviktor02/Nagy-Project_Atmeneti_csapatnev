@@ -89,6 +89,13 @@ public class CustomCalendarView extends LinearLayout{
                 final TextView EventTime=addView.findViewById(R.id.eventtime);
                 ImageButton SetTime=addView.findViewById(R.id.seteventtime);
                 CheckBox alarmMe = addView.findViewById(R.id.alarmme);
+                Calendar dateCalendar = Calendar.getInstance();
+                dateCalendar.setTime(dates.get(position));
+                alarmYear = dateCalendar.get(Calendar.YEAR);
+                alarmMonth = dateCalendar.get(Calendar.MONTH);
+                alarmDay = dateCalendar.get(Calendar.DAY_OF_MONTH);
+                alarmYear = dateCalendar.get(Calendar.YEAR);
+                alarmYear = dateCalendar.get(Calendar.YEAR);
                 Button AddEvent=addView.findViewById(R.id.addevent);
                 SetTime.setOnClickListener(new OnClickListener() {
                     @Override
@@ -107,6 +114,8 @@ public class CustomCalendarView extends LinearLayout{
                             SimpleDateFormat hformate= new SimpleDateFormat("K:mm a",Locale.ENGLISH);
                             String event_Time=hformate.format(c.getTime());
                             EventTime.setText(event_Time);
+                            alarmHour = c.get(Calendar.HOUR_OF_DAY);
+                            alarmMinute =c.get(Calendar.MINUTE);
                     }
                 },hours,minutes,false);
                     timePickerDialog.show();
