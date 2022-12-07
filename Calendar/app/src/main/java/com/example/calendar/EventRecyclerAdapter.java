@@ -58,11 +58,11 @@ public class EventRecyclerAdapter extends RecyclerView.Adapter<EventRecyclerAdap
         });
         if(isAlarmed(events.getDATE(), events.getEVENT(), events.getTIME())){
             holder.setAlarm.setImageResource(R.drawable.ic_action_notification_on);
-            notifyDataSetChanged();
+
         }
         else{
             holder.setAlarm.setImageResource(R.drawable.ic_action_notification_off);
-            notifyDataSetChanged();
+
         }
 
         Calendar datecalendar = Calendar.getInstance();
