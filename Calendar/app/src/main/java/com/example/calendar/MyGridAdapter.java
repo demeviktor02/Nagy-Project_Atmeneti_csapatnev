@@ -1,9 +1,21 @@
 package com.example.calendar;
 import android.content.Context;
-import android.widget.ArrayAdapter;
 
+import android.graphics.Color;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.widget.ArrayAdapter;
+import android.widget.TextView;
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.List;
+import java.util.Locale;
+
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 
 public class MyGridAdapter extends ArrayAdapter
 {
@@ -30,8 +42,8 @@ public class MyGridAdapter extends ArrayAdapter
         int DayNo=dateCalendar.get(Calendar.DAY_OF_MONTH);
         int displayMonth=dateCalendar.get(Calendar.MONTH)+1;
         int displayYear=dateCalendar.get(Calendar.YEAR);
-        int currentMonth=currentDate.get(Calendar.Month)+1;
-        int currentYear=currentDate.get(Calendar.Month);
+        int currentMonth=currentDate.get(Calendar.MONTH)+1;
+        int currentYear=currentDate.get(Calendar.MONTH);
 
         View view=convertView;
 
@@ -65,13 +77,13 @@ public class MyGridAdapter extends ArrayAdapter
     }
 
     private Date ConvertStringToDate(String eventDate){
-        SimpleDateFormat format=new SimpleDateFormat(pattern: "yyyy-MM-ddd",locale.ENGLISH);
+        SimpleDateFormat format=new SimpleDateFormat("yyyy-MM-ddd", Locale.ENGLISH);
         Date date=null;
         try{
             date=format.parse(eventDate);
         }
         catch (ParseException e){
-            e.printStackTrace;
+            e.printStackTrace();
         }
         return date;
     }
@@ -81,7 +93,7 @@ public class MyGridAdapter extends ArrayAdapter
         return dates.size();
     }
 
-    @override
+    @Override
     public int getPosition(@Nullable Object item)
     {
         return dates.indexOf(item);
