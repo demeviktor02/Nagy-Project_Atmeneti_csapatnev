@@ -12,7 +12,7 @@ Az alkalmazás kezdetleges funkcióinak tesztelése.
 
 | Vizsgálat | Tesztelés időpontja | Elvárás | Eredmény | Hibák |
 | :---: | --- | --- | --- | --- |
-| Naptár nézet megjelenés | 2022.12.06 | Az alkalmazás betöltésekor egy naptár jelenik meg | Az előre gombra nyomva a dátum a címsorban nem változik. | A funkció hibás, későbbiekben javításra szorul. |
+| Naptár nézet megjelenés | 2022.12.06 | Az alkalmazás betöltésekor egy naptár jelenik meg | Az előre gombra nyomva a dátum a címsorban nem változik. | Nem találtam hibát a funckióban. |
 | Aktuális év, hónap megjelenése | 2022.12.06. | Az alkalmazás betöltésekor a címsorban az aktuális év, hónap jelenik meg. | Az alkalmazás betöltésekor a címsorban az aktuális év, hónap jelenik meg. | Nem találtam hibát ebben a funkcióban. |
 | Dátum lapozása visszafelé | 2022.12.06 | A visszagombra nyomva a dátum visszább lép egyet. | A visszagombra nyomva a dátum visszább lép egyet. | Nem találtam hibát ebben a funkcióban. |
 | Dátum lapozása előre | 2022.12.06 | Az előre gombra nyomva a dátum előrébb lép egyet. | Az előre gombra nyomva a dátum előrébb lép egyet. | Nem találtam hibát ebben a funkcióban. |
