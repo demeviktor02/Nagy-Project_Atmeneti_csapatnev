@@ -15,4 +15,4 @@ Az alkalmazás kezdetleges funkcióinak tesztelése.
 | Aktuális év, hónap megjelenése | 2022.12.06. | Az alkalmazás betöltésekor a címsorban az aktuális év, hónap jelenik meg. | Az alkalmazás betöltésekor a címsorban az aktuális év, hónap jelenik meg. | Nem találtam hibát ebben a funkcióban. |
 | Dátum lapozása visszafelé | 2022.12.06 | A visszagombra nyomva a dátum visszább lép egyet. | A visszagombra nyomva a dátum visszább lép egyet. | Nem találtam hibát ebben a funkcióban. |
 | Dátum lapozása előre | 2022.12.06 | Az előre gombra nyomva a dátum előrébb lép egyet. | Az előre gombra nyomva a dátum előrébb lép egyet. | Nem találtam hibát ebben a funkcióban. |
-
+| Dátum lapozása visszafelé kiiratás | 2022.12.06 | Az visszagombra nyomva a dátum a címsorban visszább lép egyet. | Az visszagombra nyomva a dátum a címsorban visszább lép egyet. | A funkció hibás, későbbiekben javításra szorul. |
