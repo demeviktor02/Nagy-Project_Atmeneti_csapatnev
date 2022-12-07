@@ -34,4 +34,5 @@ Az alkalmazás még nem teljes állapotban lévő funkcióinak tesztelése.
 | Tetszőleges nap event hozzáadása | 2022.12.07 | Add event gombra nyomva elmenti az eventet az adott napra. | Add event gombra nyomva elmenti az eventet az adott napra. | Nem találtam hibát ebben a funkcióban. |
 | Tetszőleges nap  több event hozzáadása | 2022.12.07 | Több eventet is el tudunk menteni egy adott napra. | Több eventet is el tudunk menteni egy adott napra. | Nem találtam hibát ebben a funkcióban. |
 | Eventek megjelenése | 2022.12.07 | Adott nap eventjei megfelelő névvel és időponttal jelennek meg. | Adott nap eventjei megfelelő névvel és időponttal jelennek meg. | Nem találtam hibát ebben a funkcióban. |
-| Eventek törlése | 2022.12.07 | Delete event gombra nyomva törlődik az adatbázisból az event | Nem törlődik az adatbázisból. |A funkció hibás, későbbiekben javításra szorul. |
+| Eventek törlése | 2022.12.07 | Delete event gombra nyomva törlődik az adatbázisból az event | Nem törlődik az adatbázisból az event. | A funkció hibás, későbbiekben javításra szorul. |
+| Értesítés a közelgő eventről | 2022.12.07 | Az event közeledtével értesítést kapunk a telefonon. | Nem kapok értesítést az eventről. | A funkció hibás, későbbiekben javításra szorul. |
