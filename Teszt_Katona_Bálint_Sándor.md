@@ -34,7 +34,7 @@ Az alkalmazás még nem teljes állapotban lévő funkcióinak tesztelése.
 | Tetszőleges nap event hozzáadása | 2022.12.05. | Add event gombra nyomva elmenti az eventet az adott napra. | Add event gombra nyomva elmenti az eventet az adott napra. | Nem találtam hibát ebben a funkcióban. |
 | Tetszőleges nap  több event hozzáadása | 2022.12.05. | Több eventet is el tudunk menteni egy adott napra. | Több eventet is el tudunk menteni egy adott napra. | Nem találtam hibát ebben a funkcióban. |
 | Eventek megjelenése | 2022.12.05. | Adott nap eventjei megfelelő névvel és időponttal jelennek meg. | Adott nap eventjei megfelelő névvel és időponttal jelennek meg. | Nem találtam hibát ebben a funkcióban. |
-| Eventek törlése | 2022.12.05. | Delete event gombra nyomva törlődik az adatbázisból az event | Nem törlődik az adatbázisból az event. | A funkció hibás, későbbiekben javításra szorul. |
+| Eventek törlése | 2022.12.05. | Delete event gombra nyomva törlődik az adatbázisból az event. | Nem törlődik az adatbázisból az event. | A funkció hibás, későbbiekben javításra szorul. |
 | Értesítés a közelgő eventről | 2022.12.05. | Az event közeledtével értesítést kapunk a telefonon. | Nem kapok értesítést az eventről. | A funkció hibás, későbbiekben javításra szorul. |
 
 A béta teszt során a legtöbb funkció kifogástalanul működött. A fennakadó problémák a további fejlesztés során javításra szorulnak.
@@ -47,3 +47,5 @@ Az alkalmazás átadási állapotban van, minden eddigi hibás és hibátlan fun
 | :---: | --- | --- | --- | --- |
 | Dátum lapozása visszafelé kiiratás | 2022.12.07. | Az visszagombra nyomva a dátum a címsorban visszább lép egyet. | Az visszagombra nyomva a dátum a címsorban visszább lép egyet. | A funkció javításra került, nem találtam hibát. |
 | Dátum lapozása előre kiiratás | 2022.12.07. | Az előre gombra nyomva a dátum a címsorban előrébb lép egyet. | Az előre gombra nyomva a dátum a címsorban előrébb lép egyet. | A funkció javításra került, nem találtam hibát. |
+| Eventek törlése | 2022.12.07. | Delete event gombra nyomva törlődik az adatbázisból az event. | Delete event gombra nyomva törlődik az adatbázisból az event. | A funkció javításra került, nem találtam hibát. |
+| Értesítés a közelgő eventről | 2022.12.07. | Az event közeledtével értesítést kapunk a telefonon. | Az event közeledtével értesítést kapunk a telefonon. | A funkció javításra került, nem találtam hibát. |
