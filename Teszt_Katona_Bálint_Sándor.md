@@ -31,4 +31,4 @@ Az alkalmazás még nem teljes állapotban lévő funkcióinak tesztelése.
 | Tetszőleges napra nyomás | 2022.12.07 | Adott napra nyomva megjelenik egy kis ablakban a nap és a hozzá tartozó eventek. | Adott napra nyomva megjelenik egy kis ablakban a nap és a hozzá tartozó eventek. | Nem találtam hibát ebben a funkcióban. |
 | Tetszőleges nap ablakban textboxba írás | 2022.12.07 | Bármilyen szöveget tudunk írni a textboxba. | Bármilyen szöveget tudunk írni a textboxba. | Nem találtam hibát ebben a funkcióban. |
 | Tetszőleges nap ablakban event időpont beállítása | 2022.12.07 | Egy óra jön elő, ahol az eventnek pontos időt tudunk beállítani. | Egy óra jön elő, ahol az eventnek pontos időt tudunk beállítani. | Nem találtam hibát ebben a funkcióban. |
-
+| Tetszőleges nap event hozzáadása | 2022.12.07 | Add event gombra nyomva elmenti az eventet az adott napra. | Add event gombra nyomva elmenti az eventet az adott napra. | Nem találtam hibát ebben a funkcióban. |
