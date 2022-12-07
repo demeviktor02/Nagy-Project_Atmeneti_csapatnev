@@ -52,7 +52,8 @@ Az alkalmazás átadási állapotban van, minden eddigi hibás és hibátlan fun
 | Értesítés némítása a közelgő eventről | 2022.12.07. | Az event közeledtével nem kapunk értesítést a telefonon. | Az event közeledtével nem kapunk értesítést a telefonon. | Nem találtam hibát ebben a funkcióban. |
 | Értesítés némítás levétele a közelgő eventről | 2022.12.07. | Az event közeledtével értesítést kapunk a telefonon. | Az event közeledtével értesítést kapunk a telefonon. | Nem találtam hibát ebben a funkcióban. |
 
-A Végleges teszt lezajlott, minden eltervezés szerint működik, átadásra készen áll a megrendelőnek.
+A Végleges teszt lezajlott, minden eltervezés szerint működik mind funkcionálisan mind kinézetileg. 
+Átadásra készen áll a megrendelőnek.
 
 Tesztelést végezte és írta: Katona Bálint Sándor
 
