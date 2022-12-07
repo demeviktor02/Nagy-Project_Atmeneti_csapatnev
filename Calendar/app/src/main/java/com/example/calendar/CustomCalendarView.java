@@ -190,7 +190,7 @@ public class CustomCalendarView extends LinearLayout{
         int code = 0;
         DBOpenHelper dbOpenHelper =new DBOpenHelper(context);
         SQLiteDatabase database=dbOpenHelper.getReadableDatabase();
-        Cursor cursor=dbOpenHelper.ReadEvents(date,database);
+        Cursor cursor=dbOpenHelper.ReadIDEvents(date,event,time,database);
         while(cursor.moveToNext()){
             code=cursor.getInt(cursor.getColumnIndex(DBStructure.ID));
         }

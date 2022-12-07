@@ -3,6 +3,7 @@ package com.example.calendar;
 import androidx.annotation.NonNull;
 
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -77,4 +78,25 @@ public class EventRecyclerAdapter extends RecyclerView.Adapter<EventRecyclerAdap
         dbOpenHelper.deleteEvent(event,date,time,database);
         dbOpenHelper.close();
     }
+
+    private boolean isAlarmed(String date, String event, String time){
+        boolean alarmed = false;
+        DBOpenHelper dbOpenHelper =new DBOpenHelper(context);
+        SQLiteDatabase database=dbOpenHelper.getReadableDatabase();
+        Cursor cursor=dbOpenHelper.ReadIDEvents(date,event,time,database);
+        while(cursor.moveToNext()){
+          String  notify =cursor.getString(cursor.getColumnIndex(DBStructure.Notify));
+          if(notify.equals("on")){
+              alarmed = true;
+          }
+          else{
+              alarmed=false;
+          }
+        }
+        cursor.close();
+        dbOpenHelper.close();
+        return alarmed;
+    }
+
+
 }
