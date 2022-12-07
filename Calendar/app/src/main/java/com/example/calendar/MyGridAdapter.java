@@ -4,11 +4,13 @@ import android.content.Context;
 import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
@@ -49,14 +51,14 @@ public class MyGridAdapter extends ArrayAdapter
 
         if(view==null)
         {
-            view=inflater.inflate(R.layout.single_cell_layout,parent,attachToRoot false);
+            view=inflater.inflate(R.layout.single_cell_layout,parent,false);
         }
 
         if(displayMonth==currentMonth && displayYear==currentYear){
-            view.setBackGroundColor(getContext().getResources().getColor(R.color.green));
+            view.setBackgroundColor(getContext().getResources().getColor(R.color.green));
         }
         else{
-            view.setBackgroundColor(Color.parseColor(colorString: "#cccccc"));
+            view.setBackgroundColor(Color.parseColor("#cccccc"));
         }
 
         TextView Day_Number=view.findViewById(R.id.calendar_day);
@@ -102,7 +104,7 @@ public class MyGridAdapter extends ArrayAdapter
     @Nullable
     @Override
     public Object getItem(int position){
-        return dates.get(postiton);
+        return dates.get(position);
     }
 
 
