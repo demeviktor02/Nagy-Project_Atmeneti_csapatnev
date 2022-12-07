@@ -42,3 +42,8 @@ A béta teszt során a legtöbb funkció kifogástalanul működött. A fennakad
 ## Végleges teszt
 
 Az alkalmazás átadási állapotban van, minden eddigi hibás és hibátlan funkció újra tesztelése.
+
+| Vizsgálat | Tesztelés időpontja | Elvárás | Eredmény | Hibák |
+| :---: | --- | --- | --- | --- |
+| Dátum lapozása visszafelé kiiratás | 2022.12.07. | Az visszagombra nyomva a dátum a címsorban visszább lép egyet. | Az visszagombra nyomva a dátum a címsorban visszább lép egyet. | A funkció javításra került, nem találtam hibát. |
+| Dátum lapozása előre kiiratás | 2022.12.07. | Az előre gombra nyomva a dátum a címsorban előrébb lép egyet. | Az előre gombra nyomva a dátum a címsorban előrébb lép egyet. | A funkció javításra került, nem találtam hibát. |
