@@ -24,5 +24,8 @@ Az Alfa tesztelés során az alap funckiók szinte mind hibátlanul működtek m
 
 ## Béta teszt
 
+Az alkalmazás még nem teljes állapotban lévő funkcióinak tesztelése.
+
 | Vizsgálat | Tesztelés időpontja | Elvárás | Eredmény | Hibák |
 | :---: | --- | --- | --- | --- |
+| Tetszőleges napra nyomás | 2022.12.07 | Adott napra nyomva megjelenik egy kis ablakban a nap és a hozzá tartozó eventek. | Adott napra nyomva megjelenik egy kis ablakban a nap és a hozzá tartozó eventek. | Nem találtam hibát ebben a funkcióban. |
