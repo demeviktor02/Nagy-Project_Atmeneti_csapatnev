@@ -2,7 +2,10 @@ package com.example.calendar;
 
 import androidx.annotation.NonNull;
 
+import android.app.AlarmManager;
+import android.app.PendingIntent;
 import android.content.Context;
+import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.view.LayoutInflater;
@@ -14,6 +17,7 @@ import android.widget.TextView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
+import java.util.Calendar;
 
 public class EventRecyclerAdapter extends RecyclerView.Adapter<EventRecyclerAdapter.MyViewHolder>{
 
@@ -46,6 +50,26 @@ public class EventRecyclerAdapter extends RecyclerView.Adapter<EventRecyclerAdap
                 deleteCalendarEvent(events.getEVENT(),events.getDATE(), events.getTIME());
                 arrayList.remove(holder.getAdapterPosition());
                 notifyDataSetChanged();
+            }
+        });
+        if(isAlarmed(events.getDATE(), events.getEVENT(), events.getTIME())){
+            holder.setAlarm.setImageResource(R.drawable.ic_action_notification_on);
+            notifyDataSetChanged();
+        }
+        else{
+            holder.setAlarm.setImageResource(R.drawable.ic_action_notification_off);
+            notifyDataSetChanged();
+        }
+
+        holder.setAlarm.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(isAlarmed(events.getDATE(), events.getEVENT(), events.getTIME())){
+
+                }
+                else{
+
+                }
             }
         });
     }
@@ -98,5 +122,13 @@ public class EventRecyclerAdapter extends RecyclerView.Adapter<EventRecyclerAdap
         return alarmed;
     }
 
+    private void cancelAlarm(int RequestCode){
+        Intent intent = new Intent(context.getApplicationContext(),AlarmReceiver.class);
+        PendingIntent pendingIntent = PendingIntent.getBroadcast(context,RequestCode,intent,PendingIntent.FLAG_ONE_SHOT);
+        AlarmManager alarmManager = (AlarmManager)context.getApplicationContext().getSystemService(Context.ALARM_SERVICE);
+        alarmManager.cancel(pendingIntent);
+    }
+
+    
 
 }
