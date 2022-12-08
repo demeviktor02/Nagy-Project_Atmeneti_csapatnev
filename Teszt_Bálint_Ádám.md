@@ -13,3 +13,4 @@ Ebben a dokumentumban lesz felsorolva az elvégzett tesztek elvárásai és ered
 | Dátum visszalapozó gombra nyomás | 2022.12.08. | A naptár egy hónapot visszafelé vált | A naptár egy hónapot visszvált | Nem találtam hibát a működésében |
 | Dátum előrelapozó gombra nyomás | 2022.12.08. | A naptár nézet egy hónapot előre vált | A naptár egy hónapot előre vált | Nem találtam hibát a működésében |
 | A némitás ikonra kattintás  | 2022.12.08. | Eltűnik a notificationökből az event | Az event eltűnt a notificationökből  | Nem találtam hibát a működésében |
+| A némitás megszüntetése ikonra kattintás  | 2022.12.08. | Megjelenik a notificationökben az event | Az event megjelent a notificationökben  | Nem találtam hibát a működésében |
