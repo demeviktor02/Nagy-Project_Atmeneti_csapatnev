@@ -1,4 +1,4 @@
-## 1. A rendszer céljai és nem céljai
+## 1. A rendszer céljai
  - Események felvétele és törlése 
  - Könnyű kezelhetőség
  - Könnyű átláthatóság
