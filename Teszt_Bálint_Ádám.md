@@ -14,3 +14,4 @@ Ebben a dokumentumban fel lesznek sorolva az elvégzett tesztek elvárásai és 
 | Dátum előrelapozó gombra nyomás | 2022.12.08. | A naptár nézet egy hónapot előre vált | A naptár egy hónapot előre vált | Nem találtam hibát a működésében |
 | A némitás ikonra kattintás  | 2022.12.08. | Eltűnik a notificationökből az event | Az event eltűnt a notificationökből  | Nem találtam hibát a működésében |
 | A némitás megszüntetése ikonra kattintás  | 2022.12.08. | Megjelenik a notificationökben az event | Az event megjelent a notificationökben  | Nem találtam hibát a működésében |
+| Tetszőleges dátumra való kattintás | 2022.12.08. | Megjelenik az esemény hozzáadása ablak | Megjelent az esemény hozzáadása ablak | Nem találtam hibát a működésében |
