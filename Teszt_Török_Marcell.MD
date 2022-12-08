@@ -27,11 +27,27 @@ Az alkalmazás még nem teljes állapotban lévő funkcióinak tesztelése.
 | :---: | --- | --- | --- | --- |
 | Az Óra ikonra való kattintás | 2022.12.08. | Meg jelenik az óra | Az óra ikonja meg jelenik | Nem találtam hibát ebben a funkcióban. |
 | Az Óra idő beállitása | 2022.12.08. | Be állitja az órát/  | Az óra beállitódik az időre amire beálitjuk | Nem találtam hibát ebben a funkcióban. |
-| Az Perc idő beállitása | 2022.12.08. | Be állitja az percet  | Az perc beállitódik az időre amire beálitjuk | Nem találtam hibát ebben a funkcióban. |
+| Az Perc idő beállitása | 2022.12.08. | Be állitja az percet  | Az perc nem állitódik be az időre amire beálitjuk | A perc beálitása hibás javitásra szorul |
 | A Cancel gombra Kattintás | 2022.12.08. | Ki lép az óra beálitásból  | Az óra beálitásból kilépunk | Nem találtam hibát ebben a funkcióban. |
 | Az Ok gombra kattintás| 2022.12.08. | Ki lép a korábban megadott idővel | A megadott idővel ki léptünk  | Nem találtam hibát ebben a funkcióban. |
 
 
 
 A béta teszt során a legtöbb funkció kifogástalanul működött. A fennakadó problémák a további fejlesztés során javításra szorulnak.
+
+## Végleges teszt
+
+Az alkalmazás átadási állapotban van, minden eddigi hibás és hibátlan funkció újra tesztelése.
+
+| Vizsgálat | Tesztelés időpontja | Elvárás | Eredmény | Hibák |
+| :---: | --- | --- | --- | --- |
+| Delete gomb megnyomása A felugró event ablakban  | 2022.12.08. | El tűnik az ablak és törlődik az esemény az adott napról és időpontról | Az ablak el tűnik és törlődik az event  | Nem találtam hibát a működésében |
+| Az Perc idő beállitása | 2022.12.08. | Be állitja az percet  | Az perc beálitódik az időre amire beálitjuk | Nem találtam hibát a működésében |
+
+A Végleges teszt lezajlott, minden eltervezés szerint működik mind funkcionálisan mind kinézetileg. 
+Átadásra készen áll a megrendelőnek.
+
+Tesztelést végezte és írta: Török Marcell Balázs
+
+Befejezve: 2022.12.08. 6:00:00
 
