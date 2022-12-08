@@ -15,3 +15,12 @@ Ebben a dokumentumban fel lesznek sorolva az elvégzett tesztek elvárásai és 
 | A némitás ikonra kattintás  | 2022.12.08. | Eltűnik a notificationökből az event | Az event eltűnt a notificationökből  | Nem találtam hibát a működésében |
 | A némitás megszüntetése ikonra kattintás  | 2022.12.08. | Megjelenik a notificationökben az event | Az event megjelent a notificationökben  | Nem találtam hibát a működésében |
 | Tetszőleges dátumra való kattintás | 2022.12.08. | Megjelenik az esemény hozzáadása ablak | Megjelent az esemény hozzáadása ablak | Nem találtam hibát a működésében |
+
+Az Alfatesztek során az alap funckiók mind hibátlanul működtek. Az esetleges hibák a későbbi fejlesztés során javításra kerülnek.
+
+## Béta teszt
+
+Az alkalmazás még nem teljes állapotban lévő funkcióinak tesztelése.
+
+| Vizsgálat | Tesztelés időpontja | Elvárás | Eredmény | Hibák |
+| :---: | --- | --- | --- | --- |
