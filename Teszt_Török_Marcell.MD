@@ -18,3 +18,15 @@ Ebben a dokumentumban lesz felsorolva az elvégzett tesztek elvárásai és ered
 
 Az Alfa tesztelés során a vizsgált elemek mind hibátlanul működtek mindenféle fennakadások nélkül.
 Az Alfa tesztelés során a vizsgált elemek között volt ami nem megfelelően működött, ez a későbbiek során javításra szorul.
+
+## Béta teszt
+
+Az alkalmazás még nem teljes állapotban lévő funkcióinak tesztelése.
+
+| Vizsgálat | Tesztelés időpontja | Elvárás | Eredmény | Hibák |
+| :---: | --- | --- | --- | --- |
+| Az Óra ikonra való kattintás | 2022.12.08. | Meg jelenik az óra | Az óra ikonja meg jelenik | Nem találtam hibát ebben a funkcióban. |
+
+
+A béta teszt során a legtöbb funkció kifogástalanul működött. A fennakadó problémák a további fejlesztés során javításra szorulnak.
+
