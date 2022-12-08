@@ -135,7 +135,7 @@ public class CustomCalendarView extends LinearLayout{
                         SaveEvent(EventName.getText().toString(),EventTime.getText().toString(),date,month,year,"on");
                         SetUpCalendar();
                         Calendar calendar = Calendar.getInstance();
-                        calendar.set(alarmYear,alarmMonth,alarmDay,alarmHour,alarmMinute ;
+                        calendar.set(alarmYear,alarmMonth,alarmDay,alarmHour,alarmMinute) ;
                         setAlarm(calendar,EventName.getText().toString(),EventTime.getText().toString(),getRequestCode(date,EventName.getText().toString(),EventTime.getText().toString()));
                         alertDialog.dismiss();
                     }else {

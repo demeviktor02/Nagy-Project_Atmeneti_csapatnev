@@ -14,6 +14,8 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
+
+import androidx.core.app.AlarmManagerCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.text.ParseException;
@@ -119,6 +121,18 @@ public class EventRecyclerAdapter extends RecyclerView.Adapter<EventRecyclerAdap
         }
     }
 
+    private Date ConvertStringToDate(String eventDate){
+        SimpleDateFormat format=new SimpleDateFormat("yyyy-MM-ddd", Locale.ENGLISH);
+        Date date=null;
+        try{
+            date=format.parse(eventDate);
+        }
+        catch (ParseException e){
+            e.printStackTrace();
+        }
+        return date;
+    }
+
     private Date ConvertStringToTime(String eventDate){
         SimpleDateFormat format=new SimpleDateFormat("kk:mm", Locale.ENGLISH);
         Date date=null;
@@ -160,6 +174,16 @@ public class EventRecyclerAdapter extends RecyclerView.Adapter<EventRecyclerAdap
         return alarmed;
     }
 
+
+    private void setAlarm(Calendar calendar, String event,String time,int RequestCode){
+        Intent intent = new Intent(context.getApplicationContext(),AlarmReceiver.class);
+        intent.putExtra("event",event);
+        intent.putExtra("time",time);
+        intent.putExtra("id",RequestCode);
+        PendingIntent pendingIntent = PendingIntent.getBroadcast(context,RequestCode,intent,PendingIntent.FLAG_ONE_SHOT);
+        AlarmManager alarmManager = (AlarmManager) context.getApplicationContext().getSystemService(Context.ALARM_SERVICE);
+        alarmManager.set(AlarmManager.RTC_WAKEUP,calendar.getTimeInMillis(),pendingIntent);
+    }
     private void cancelAlarm(int RequestCode){
         Intent intent = new Intent(context.getApplicationContext(),AlarmReceiver.class);
         PendingIntent pendingIntent = PendingIntent.getBroadcast(context,RequestCode,intent,PendingIntent.FLAG_ONE_SHOT);
