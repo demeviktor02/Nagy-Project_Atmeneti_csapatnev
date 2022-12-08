@@ -7,7 +7,7 @@
 ## 2. Projekt terv
 #### A rendszer létrehozásához rendelkezésre álló erőforrások: A felhasználó által használt notebookok/asztali számítógépek melyeknek rendelkezniük kell egy Androidot futattó telefonra(Android 5.0)
 - Scrum Masters: Czafik Milán
-- Product Owner: Czafik Milán , Bálint Ádám , Deme Viktor , Török Marcell , Katona Bálint
+- Product Owner: Czafik Milán
 - Contributer: Bálint Ádám
 - Contributer: Deme Viktor
 - Contributer: Török Marcell
