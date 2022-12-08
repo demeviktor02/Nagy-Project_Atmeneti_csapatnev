@@ -24,3 +24,11 @@ Az alkalmazás még nem teljes állapotban lévő funkcióinak tesztelése.
 
 | Vizsgálat | Tesztelés időpontja | Elvárás | Eredmény | Hibák |
 | :---: | --- | --- | --- | --- |
+| Az Ok gombra kattintás| 2022.12.08. | Kilép a korábban megadott idővel | A megadott idővel kiléptünk  | Nem találtam hibát a működésében |
+| A Cancel gombra kattintás | 2022.12.08. | Kilép az óra beállitásból  |Kilépett az óra beállitásból | Nem találtam hibát ebben a funkcióban |
+| Az óra ikonra való kattintás | 2022.12.08. | Megjelenik az óra ikonja | Megjelent az óra ikonja | Nem találtam hibát a működésében |
+| Óra beállitása | 2022.12.08. | Beállitja az órát  | Beállitja az órát | Nem találtam hibát a működésében |
+| Perc beállitása | 2022.12.08. | Beállítja az percet  | Az perc nem állitódik be az időre amire beálitjuk | Nem találtam hibát a működésében |
+
+
+A béta teszt során minden funkció kifogástalanul működött. A fennakadó problémák a további fejlesztés során javításra szorulnak.
