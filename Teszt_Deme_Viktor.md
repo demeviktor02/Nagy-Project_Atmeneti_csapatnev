@@ -51,3 +51,38 @@ A Végleges teszt lezajlott és minden funkció rendesen működik, esztétikail
 Tesztelést végezte és írta: Deme Viktor
 
 Befejezve: 2022.12.07.
+
+
+## Alfa teszt
+
+| Vizsgálat | Tesztelés időpontja | Elvárás | Eredmény | Hibák |
+| :---: | --- | --- | --- | --- |
+| Add event gomb megnyomása | 2022.12.01. | Megjelenik egy esemény a naptárban |  Megjelenik egy esemény a naptárban | Nem találtam hibát a működésében |
+| A korábban hozzá adott event helyes időben jelenjen meg | 2022.12.01. |  A korábban hozzá adott event helyes időben jelenik meg |  Megjelenik A korábban hozzá adott event helyes időben | Nem találtam hibát a működésében |
+| Delete gomb megnyomása A felugró event ablakban  | 2022.12.01. | El tűnik az ablak és törlődik az esemény az adott napról és időpontról | Az ablak el tűnik de az időpontban ott marad az esemény  | A event törlése hibás, a funkció javitásra szorul |
+| A némitás iconra kattintás  | 2022.12.05. | El tűnik a notification barról az event | Az event el tűnt a notification barról  | Nem találtam hibát a működésében |
+| A Visza némitás iconra kattintás  | 2022.12.05. | VIsza tér a notification  | A notification viszatért  | Nem találtam hibát a működésében |
+
+
+## Béta teszt
+
+| Vizsgálat | Tesztelés időpontja | Elvárás | Eredmény | Hibák |
+| :---: | --- | --- | --- | --- |
+| Az Óra ikonra való kattintás | 2022.12.08. | Meg jelenik az óra | Az óra ikonja meg jelenik | Nem találtam hibát a működésében |
+| Az Óra idő beállitása | 2022.12.08. | Be állitja az órát  | Az óra beállitódik az időre amire beálitjuk | Nem találtam hibát a működésében |
+| Az Perc idő beállitása | 2022.12.08. | Be állitja az percet  | Az perc nem állitódik be az időre amire beálitjuk | A perc beálitása hibás javitásra szorul |
+| A Cancel gombra Kattintás | 2022.12.08. | Ki lép az óra beálitásból  | Az óra beálitásból kilépunk | Nem találtam hibát ebben a funkcióban. |
+| Az Ok gombra kattintás| 2022.12.08. | Ki lép a korábban megadott idővel | A megadott idővel ki léptünk  | Nem találtam hibát a működésében |
+
+
+## Végleges teszt
+
+| Vizsgálat | Tesztelés időpontja | Elvárás | Eredmény | Hibák |
+| :---: | --- | --- | --- | --- |
+| Delete gomb megnyomása A felugró event ablakban  | 2022.12.08. | El tűnik az ablak és törlődik az esemény az adott napról és időpontról | Az ablak el tűnik és törlődik az event  | Nem találtam hibát a működésében |
+| Az Perc idő beállitása | 2022.12.08. | Be állitja az percet  | Az perc beálitódik az időre amire beálitjuk | Nem találtam hibát a működésében |
+| Az Óra modositása | 2022.12.08. | Módositja a korábban beálitott órát  | Az óra módosul a korábban beálitott órárol | Nem találtam hibát a működésében |
+| Az Perc modositása | 2022.12.08. | Módositja a korábban beálitott percet  | Az perc módosul a korábban beálitott percről | Nem találtam hibát a működésében |
+| Az Név amit eventnek megadunk az jelenik meg| 2022.12.08. | Az a név amit megadtunk jelenmik meg a napnál amelyiknél megadtuk | Az a név amit megadtunk jelenmik meg a napnál amelyiknél megadtuk  | Nem találtam hibát a működésében |
+
+A teszteket én is elvégeztem, nem találtam hibát a funkciók működésében!
